@@ -1,9 +1,9 @@
-import '@/styles/App.scss';
+import 'styles/App.scss';
 
 export default function App() {
   return (
     <div className="App">
-        Hello world
+      Home page
     </div>
   );
 }
