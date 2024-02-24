@@ -1,25 +1,24 @@
-
 /* poppins-regular - latin */
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../assets/Poppins-SemiBold.ttf")
+  src: url("../assets/Poppins-SemiBold.ttf");
 }
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/Poppins-Regular.ttf")
+  src: url("../assets/Poppins-Regular.ttf");
 }
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/Poppins-Light.ttf")
+  src: url("../assets/Poppins-Light.ttf");
 }
 
 * {
@@ -32,7 +31,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 
 h1,
 h2,
@@ -65,7 +63,6 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 400;
-
 }
 
 button {

@@ -1,12 +1,15 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
+        "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended"
+        "plugin:prettier/recommended",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -18,7 +21,6 @@
         "react"
     ],
     "rules": {
-        "quotes": ["error", "double"],
-        "semi": ["error", "always"]
+        "react/react-in-jsx-scope": "off"
     }
 }

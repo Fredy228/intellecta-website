@@ -1,10 +1,5 @@
-import 'pages/Home/home.module.scss';
+import "pages/Home/home.module.scss";
 
-export default function Home() {
-  return (
-    <div className="App">
-      Home page
-    </div>
-  );
+export default function HomePage() {
+  return <div className="App">Home page</div>;
 }
-
