@@ -1,3 +1,44 @@
-.header{
+@import "styles/var.scss";
+.header {
+  border-bottom: 1px solid #383838;
+  margin-bottom: 60px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 13px 0 13px 0;
+  }
 
+  &__logo {
+    @include title-hero;
+    &::after {
+      content: ".";
+      color: $background-section-color-orange;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 78px;
+  }
+  &__menu_item {
+    @include li-header;
+  }
+}
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-height: 30px;
+  background-color: $primary-text-color;
+  top: 110px;
+  &__title {
+    position: absolute;
+    color: $default-color;
+    font-size: 15px;
+    font-weight: 400;
+    right: 0;
+  }
 }

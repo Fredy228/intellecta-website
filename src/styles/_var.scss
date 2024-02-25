@@ -1,3 +1,43 @@
-$defautl-body-color:#FFFFFF;
-$background-sectin-color-blue:#0E3F87;
-$background-sectin-color-orange:#0E3F87;
+$default-color: #ffffff;
+$primary-text-color: #383838;
+$background-section-color-blue: #0e3f87;
+$background-section-color-orange: #ffa450;
+$option-color: #67bcff;
+$widget-color: #11142d;
+$widget-bg: #438ced;
+$widget-color-subtitle: #808191;
+$svg-widgets-color: #d7d7d7;
+@mixin li-header {
+  font-size: 25px;
+  font-weight: 400;
+}
+@mixin li-footer {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+@mixin title-hero {
+  font-size: 40px;
+  font-weight: 600;
+  > span {
+    color: $option-color;
+  }
+}
+
+@mixin other-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+/*
+
+*/
+@mixin button-or-link {
+  width: 100%;
+  max-width: 309px;
+  border-radius: 40px;
+  color: $default-color;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: $option-color;
+  padding: 17px 0;
+}
