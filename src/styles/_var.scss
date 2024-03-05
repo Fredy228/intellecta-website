@@ -7,13 +7,16 @@ $widget-color: #11142d;
 $widget-bg: #438ced;
 $widget-color-subtitle: #808191;
 $svg-widgets-color: #d7d7d7;
+
 @mixin li-header {
-  font-size: 25px;
+  font-size: clamp(1rem, 0.8875rem + 0.5625vw, 1.5625rem);
   font-weight: 400;
+  color: #383838;
 }
 @mixin li-footer {
   font-size: 25px;
   font-weight: 300;
+  color: #383838;
 }
 
 @mixin title-hero {
@@ -34,10 +37,11 @@ $svg-widgets-color: #d7d7d7;
 @mixin button-or-link {
   width: 100%;
   max-width: 309px;
-  border-radius: 40px;
   color: $default-color;
   font-size: 24px;
   font-weight: 600;
   background-color: $option-color;
-  padding: 17px 0;
+  text-align: center;
+  border-radius: 75px;
+  box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
 }

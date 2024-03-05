@@ -1,0 +1,33 @@
+@import "styles/var";
+.accordion {
+
+  &_item{
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 4px 42px 0 rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    color:$primary-text-color;
+  }
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    cursor: pointer;
+  }
+  &_title{
+    @include title-hero;
+    font-size: 25px;
+  }
+  &_subtitle{
+    font-size: 20px;
+  }
+  &_content {
+    display: flex;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+

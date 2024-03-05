@@ -1,44 +1,33 @@
 @import "styles/var.scss";
 .header {
-  border-bottom: 1px solid #383838;
-  margin-bottom: 60px;
   &__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 13px 0 13px 0;
+    gap: 50px;
   }
 
   &__logo {
-    @include title-hero;
-    &::after {
-      content: ".";
-      color: $background-section-color-orange;
-    }
+    border-radius: 41px;
+    box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
   }
 
   &__menu {
+    border-radius: 41px;
+    box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
     display: flex;
-    gap: 78px;
+    padding: 60px 48px;
+    gap: 80px;
   }
   &__menu_item {
     @include li-header;
+    transition: 0.5s all linear;
+    &:hover{
+      color: $option-color;
+    }
   }
 }
-.subheader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  max-height: 30px;
-  background-color: $primary-text-color;
-  top: 110px;
-  &__title {
-    position: absolute;
-    color: $default-color;
-    font-size: 15px;
-    font-weight: 400;
-    right: 0;
-  }
-}
+
