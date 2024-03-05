@@ -4,13 +4,9 @@ import heroImg from "assets/img/hero-comp.png"
 import styles from "pages/Home/home.module.scss";
 import {Accardion} from "../../components/UI/Accardion/Accardion";
 import {AccardionProps} from "../../components/UI/Accardion/list-slides";
-import {useState} from "react";
+import {IconRobotTeacher} from "../../components/Icon/Icons";
 export default function HomePage() {
-    const [activeIndex, setActiveIndex] = useState(0);
 
-    const handleToggle = (index: number) => {
-        setActiveIndex(activeIndex === index ? -1 : index);
-    };
   return (
       <main>
           <section className={styles.hero}>
@@ -35,17 +31,29 @@ export default function HomePage() {
           </section>
           <section>
               <div className={"accardion__container"}>
-                  {AccardionProps.map((item, index) => (
-                      <Accardion
-                          key={item.id}
-                          title={item.title}
-                          subtitle={item.subtitle}
-                          pageName={item.pageName}
-                          image={item.image}
-                          isOpen={activeIndex === index}
-                          onToggle={() => handleToggle(index)}
-                      />
-                  ))}
+                  <div style={{height:'100vh'}}>
+                      {AccardionProps.map((item) => (
+                          <Accardion
+                              key={item.id}
+                              title={item.title}
+                              subtitle={item.subtitle}
+                              pageName={item.pageName}
+                              image={item.image}
+                          />
+                      ))}
+                  </div>
+              </div>
+          </section>
+          <section>
+              <div className={"reg__container"}>
+                  <div className={styles.reg__wrapper}>
+                      <div className={styles.reg__content}>
+                          <h1 className={styles.reg__content_title}>Відкрий для себе безмежні можливості дистанційного навчання разом з Intellecta</h1>
+                          <p className={styles.reg__content_subtitle}>Скоро у навчальних закладах ти матимеш змогу насолоджуватися повним спектром наших інновацій. А поки це стає реальністю, реєструйся вже зараз, формуй свій унікальний профіль та отримай винагороду у ролі Тестувальника. Залишайся на зв'язку з друзями та стань першим, хто дізнається про всі гарячі новини. Приєднуйся до Intellecta, реєструйся, і відчуй атмосферу нового зручного виду дистанційного навчання</p>
+                          <Link to={"/"} className={styles.reg__content_link}>Зареєструватися</Link>
+                      </div>
+                      <IconRobotTeacher />
+                  </div>
               </div>
           </section>
       </main>

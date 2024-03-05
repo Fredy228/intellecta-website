@@ -1,6 +1,5 @@
 import laptopSlideF from "assets/img/laptop-slider-1.png"
 import laptopSlideS from "assets/img/laptop-slider-2.png"
-import laptopSlideTh from "assets/img/laptop-slider-3.png"
 
 export type TAccardionProps = {
   id?: number;
@@ -8,7 +7,7 @@ export type TAccardionProps = {
   title: string;
   subtitle: string;
   pageName:string;
-  isOpen:boolean;
+  isOpen?:boolean;
   onToggle?: () => void;
 };
 

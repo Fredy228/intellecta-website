@@ -29,3 +29,27 @@
     @include button-or-link;
   }
 }
+.reg{
+  &__wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 39px;
+    width: 100%;
+    max-width: 803px;
+    margin-right: 10px;
+    &_title{
+      margin-bottom: 38px;
+    }
+    &_sub{
+    }
+    &_link{
+      padding: 17px 51px;
+      @include button-or-link;
+    }
+  }
+}
