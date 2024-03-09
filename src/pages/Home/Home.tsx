@@ -17,7 +17,7 @@ export default function HomePage() {
                       <p className={styles.hero__subtitle}>Ідеальний інструмент для навчання, що дозволяє вам складати,
                           делегувати та керувати процесом навчання безпосередньо з вашими одногрупниками, викладачами та
                           колегами.</p>
-                      <Link to={'/'} className={styles.hero__btn}>Приєднатися</Link>
+                      <Link to={'/join_us'} className={styles.hero__btn}>Приєднатися</Link>
                       <img src={heroImg} alt={'Laptop'} className={styles.hero__img}/>
                   </div>
               </div>

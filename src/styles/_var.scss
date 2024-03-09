@@ -16,7 +16,7 @@ $svg-widgets-color: #d7d7d7;
 @mixin li-footer {
   font-size: 25px;
   font-weight: 300;
-  color: #383838;
+  margin: 15px auto 0 auto;
 }
 
 @mixin title-hero {
