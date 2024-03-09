@@ -1,3 +1,4 @@
+//Colors
 $default-color: #ffffff;
 $primary-text-color: #383838;
 $background-section-color-blue: #0e3f87;
@@ -7,7 +8,29 @@ $widget-color: #11142d;
 $widget-bg: #438ced;
 $widget-color-subtitle: #808191;
 $svg-widgets-color: #d7d7d7;
+//Animation stars
+$animation-duration:1s;
+$animation-delay: 0.5s;
 
+@keyframes blinker {
+  to {
+    opacity: 0.7;
+  }
+  from {
+    opacity: 1.0;
+    filter: drop-shadow(1px 0px 14px #fff);
+  }
+}
+
+@for $i from 1 through 13 {
+  .star:nth-child(#{$i}) {
+    animation: blinker $animation-duration infinite alternate $i * $animation-delay;
+
+  }
+}
+
+
+//mixins global
 @mixin li-header {
   font-size: clamp(1rem, 0.8875rem + 0.5625vw, 1.5625rem);
   font-weight: 400;
@@ -44,4 +67,20 @@ $svg-widgets-color: #d7d7d7;
   text-align: center;
   border-radius: 75px;
   box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
+}
+@mixin white_star {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-30.01deg);
+  border-radius: 2px;
+  background: rgb(205, 244, 255);
+}
+@mixin green_star{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-30.01deg);
+  border-radius: 5px;
+  background: rgb(164, 206, 161);
 }

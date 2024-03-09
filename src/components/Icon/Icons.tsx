@@ -3,3 +3,4 @@ export { ReactComponent as IconStatistic } from "components/Icon/storage/statist
 export { ReactComponent as IconArrowAccardion } from "components/Icon/storage/arrow-slider.svg"
 export { ReactComponent as IconRobotTeacher } from "components/Icon/storage/teacher-robot.svg"
 export { ReactComponent as IconInstagram } from "components/Icon/storage/instagram.svg"
+export { ReactComponent as IconRobotbook } from  "components/Icon/storage/Robot-book.svg"
