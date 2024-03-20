@@ -1,0 +1,34 @@
+@import "styles/var";
+:root{
+  --swiper-pagination-bottom: 15px;
+}
+.swiperPagination{
+  position: absolute;
+  max-width: 670px;
+  display: flex;
+  gap: 40px;
+  border-radius: 25px;
+  padding: 10px 24px;
+  background: $primary-text-color;
+  bottom: var(--swiper-pagination-bottom);
+  color: #ffffff;
+  margin: 0 auto;
+
+.swiperPaginationBullet {
+  width: 100%;
+  height: 100%;
+  max-width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 80px));
+  max-height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 70px));
+  min-width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 30px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.75rem, 0.6071rem + 0.7143vw, 1.25rem);
+  opacity: 1;
+  background: transparent;
+}
+  .swiper-pagination-bullet-active {
+    color: transparent;
+  }
+}
+

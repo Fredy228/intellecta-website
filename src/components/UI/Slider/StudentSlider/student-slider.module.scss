@@ -1,0 +1,33 @@
+@import "styles/var";
+
+.adSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &_innerGrid {
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.25);
+    background: $default-color;
+    color: #11142D;
+    overflow: hidden;
+  }
+
+
+  &_carouselWrap:before {
+    content: "";
+    display: block;
+    padding-top: 56%;
+  }
+
+  &_image{
+    width: 100%;
+    height: auto;
+    background-position: 50% 50%;
+    transform: translate(0%, -10%);
+  }
+
+}

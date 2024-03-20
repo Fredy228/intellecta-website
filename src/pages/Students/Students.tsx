@@ -1,14 +1,18 @@
-import {Slider} from "components/UI/Slider/Slider";
+import {SliderStudents} from "components/UI/Slider/StudentSlider/SliderStudent";
 import {IconRobotbook} from "components/Icon/Icons";
 import styles from "./students.module.scss"
+
 export default function StudentsPage() {
     return (
         <main>
             <section className={styles.students}>
                 <div className={"student__container"}>
                     <div>
-                        <IconRobotbook />
-                        <Slider/>
+                        <div>
+                            <IconRobotbook />
+                            <p>Повна версія | <span>Бета-версія</span></p>
+                        </div>
+                        <SliderStudents />
                     </div>
                 </div>
                 <div>

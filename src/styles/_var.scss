@@ -67,6 +67,11 @@ $animation-delay: 0.5s;
   text-align: center;
   border-radius: 75px;
   box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
+  transition: all linear 0.3s;
+  &:hover{
+    opacity: 0.7;
+  }
+
 }
 @mixin white_star {
   position: absolute;

@@ -24,10 +24,20 @@
   }
   &__menu_item {
     @include li-header;
-    transition: 0.5s all linear;
+    transition: 0.3s all linear;
     &:hover{
       color: $option-color;
     }
   }
 }
-
+.subheader{
+  width: 100%;
+  background-color: #FDFCFC;
+  &__title{
+    text-align: center;
+    width: 4400px;
+    color: #383838FF;
+    font-size: 50px;
+    height: 80px;
+  }
+}

@@ -1,15 +1,17 @@
 @import "styles/var";
 .card {
+  border-radius: 30px;
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: $default-color;
   color: $primary-text-color;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 30px;
   padding: 74px 45px 45px 22px;
+  transition: all ease 0.9s;
+
+
   &__wrapper{
     display: flex;
     justify-content: center;
@@ -30,6 +32,7 @@
     font-weight: 400;
 
   }
+
   &__svg{
     width: 100%;
     max-width: 168px;
@@ -43,11 +46,18 @@
     border-radius:50%;
     border: 3px solid $default-color;
     margin-bottom: 88px;
+    >svg{
+      background-image: url("../../Icon/storage/bg_card_home.svg");
+      background-size: 50% 50%;
+    }
+
   }
   &__title{
     font-family: Inter, "sans-serif";
     font-size: 30px;
     margin-bottom: 28px;
+    opacity: 0.4;
+    transition: all linear 0.1s;
   }
   &__subtitle{
     margin-bottom: 30px;
@@ -56,9 +66,26 @@
     font-weight: 400;
     width: 100%;
     max-width: 333px;
+    transition: all linear 0.3s;
+    opacity: 0.4;
   }
   &__link{
+    opacity: 0;
     padding: 13px 42px;
     @include button-or-link;
+    transition: all linear 0.5s;
+  }
+  &:hover{
+    .card{
+      &__link{
+        opacity: 1;
+      }
+      &__title{
+        opacity:1;
+      }
+      &__subtitle{
+        opacity:1;
+      }
+    }
   }
 }

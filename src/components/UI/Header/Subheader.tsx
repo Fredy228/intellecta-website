@@ -7,16 +7,15 @@ export default function Subheader() {
       <motion.h1
         className={styles.subheader__title}
         initial={{ x: "100%" }}
-        animate={{ x: "-190%" }}
+        animate={{ x: "-170%" }}
         transition={{
-          duration: 24,
+          duration: 20,
           loop: Infinity,
           repeat: Infinity,
           ease: "linear"
-        }}>
-        НАРАЗІ ДІЄ БЕТА-ВЕРСІЯ ДОДАТКУ | ДОЛУЧАЙСЯ ДО ТЕСТУВАННЮ | НАРАЗІ ДІЄ
-        БЕТА-ВЕРСІЯ ДОДАТКУ | ДОЛУЧАЙСЯ ДО ТЕСТУВАННЮ | НАРАЗІ ДІЄ БЕТА-ВЕРСІЯ
-        ДОДАТКУ
+        }}
+      >
+        НАРАЗІ ДІЄ БЕТА-ВЕРСІЯ ДОДАТКУ | ДОЛУЧАЙСЯ ДО ТЕСТУВАННЮ | НАРАЗІ ДІЄ БЕТА-ВЕРСІЯ ДОДАТКУ | ДОЛУЧАЙСЯ ДО ТЕСТУВАННЮ | НАРАЗІ ДІЄ БЕТА-ВЕРСІЯ ДОДАТКУ
       </motion.h1>
     </div>
   );

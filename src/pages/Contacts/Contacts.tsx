@@ -1,7 +1,14 @@
+import {ContactsSlider} from "../../components/UI/Slider/ContactSlider/ContactsSlider";
 
 export default function ContactsPage() {
     return (
-        <main>Contacts</main>
+        <main>
+            <section>
+                <div className={'__container'}>
+                    <ContactsSlider/>
+                </div>
+            </section>
+        </main>
     );
 }
 

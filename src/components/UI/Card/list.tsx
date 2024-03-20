@@ -1,4 +1,4 @@
-import { IconStatistic } from "../../Icon/Icons";
+import {IconChat, IconStatistic, IconTests, IconZhurnal} from "../../Icon/Icons";
 
 export type TCardProps = {
     id:number;
@@ -8,6 +8,7 @@ export type TCardProps = {
     linkText:string;
     role:string;
     bg:string;
+    link:string;
 }
 
 export const cardContent: TCardProps[] = [
@@ -18,34 +19,38 @@ export const cardContent: TCardProps[] = [
         subtitle: 'Автоматичний процес створення розкладу та збір статистики навчального процесу',
         linkText: 'Детальніше',
         role: 'Для адміністрації',
-        bg:"#FFF5D1FF "
+        bg:"#FFF5D1FF ",
+        link:'/administration',
 
     },
     {
         id:2,
-        svg: <IconStatistic />,
+        svg: <IconZhurnal />,
         title: 'Відстежуйте',
         subtitle: 'Автоматизований журнал відвідування, оцінок та виконання домашніх завдань',
         linkText: 'Детальніше',
         role: 'Для викладачів',
-        bg:"#D1F9FFFF"
+        bg:"#D1F9FFFF",
+        link:'/teacher',
     },
     {
         id:3,
-        svg: <IconStatistic />,
+        svg: <IconTests />,
         title: 'Будь в темі',
         subtitle: 'Ефективний моніторинг дедлайнів та подання домашніх завдань  у будь-який момент',
         linkText: 'Детальніше',
         role: 'Для учнів',
-        bg:"#D1FFD4FF"
+        bg:"#D1FFD4FF",
+        link:'/students',
     },
     {
         id:4,
-        svg: <IconStatistic />,
+        svg: <IconChat />,
         title: 'Спілкуйтеся',
         subtitle: 'Зручна комунікація зі студентами та викладачами через чат, відео- та аудіоконференції',
         linkText: 'Детальніше',
         role: 'Для вісх',
-        bg:"#FCD1FFFF"
+        bg:"#FCD1FFFF",
+        link:'/contacts'
     },
 ]
