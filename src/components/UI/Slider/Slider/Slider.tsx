@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/pagination";
-import "./custom-style-swiper.scss";
+import style from "./custom-style-swiper.module.scss";
 import styles from "./slider.module.scss";
 //list
 import {slideHome, TSlideProps} from "../list";
@@ -17,10 +17,10 @@ export const Slider: FC = () => {
                 <Swiper
                     slidesPerView={1}
                     pagination={{
-                        el: '.swiper-pagination',
+                        el: `.${style["swiper-pagination"]}`,
                         clickable: true,
                         renderBullet: function (index: number, className: string) {
-                            return `<span class="${className}">${paginationTexts[index]}</span>`;
+                            return `<span class="${style[className]}">${paginationTexts[index]}</span>`;
                         },
                     }}
                     modules={[Pagination]}
@@ -35,7 +35,7 @@ export const Slider: FC = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-                    <div className={`swiper-pagination`}/>
+                    <div className={`${style["swiper-pagination"]}`}/>
 
                 </Swiper>
             </div>

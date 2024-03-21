@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/pagination";
-import "../Slider/custom-style-swiper.scss";
+import "../Slider/custom-style-swiper.module.scss";
 import styles from "../Slider/slider.module.scss";
 //list
 import {slideHome, TSlideProps} from "../list";
