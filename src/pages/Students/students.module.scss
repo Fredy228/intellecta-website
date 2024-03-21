@@ -1,0 +1,20 @@
+@import "styles/var";
+.students{
+  font-size: 25px;
+  &__top{
+    display: flex;
+  }
+  &__robot{
+    span{ color: #11142d }
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &_item{
+      background: url("../../assets/img/markers.svg") 0 10px no-repeat;
+      background-size: 15px 15px;
+      padding-left: 21px;
+    }
+  }
+}
