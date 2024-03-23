@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import {IconInstagram} from "components/Icon/Icons";
+import {IconInstagram, IconTikTok} from "components/Icon/Icons";
 import styles from "./footer.module.scss";
 export const Footer = () => {
   return(
@@ -40,9 +39,10 @@ export const Footer = () => {
               <div className={styles.footer_copyright}>
                   <span> ©  2024 Intellecta</span>
                   <span>Legal | Privacy Policy | Cookie Policy | Sitemap</span>
-                  <Link to={'/'}>
-                  <IconInstagram />
-              </Link>
+                  <div className={styles.footer__social}>
+                      <a href={'/'}><IconTikTok/></a>
+                      <a href={'/'}><IconInstagram /></a>
+                  </div>
             </div>
           </div>
         </div>

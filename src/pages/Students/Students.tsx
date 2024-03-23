@@ -6,6 +6,7 @@ export default function StudentsPage() {
         <main>
             <section className={styles.students}>
                 <div className={"student__container"}>
+                    <h1 className={styles.students__title}>Можливості для студентів та учнів</h1>
                     <div className={styles.students__top}>
                         <div className={styles.students__robot}>
                             <IconRobotbook />

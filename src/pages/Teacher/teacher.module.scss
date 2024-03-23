@@ -1,5 +1,5 @@
 @import "styles/var";
-.students{
+.teacher {
   font-size: 25px;
   &__top{
     display: flex;
@@ -7,7 +7,12 @@
     gap: 202px;
   }
   &__title{
-   text-align: center;
+    text-align: center;
+    margin-bottom: 26px;
+    color: #11142d;
+  }
+  &__title{
+    text-align: center;
     margin-bottom: 26px;
     color: #11142d;
   }

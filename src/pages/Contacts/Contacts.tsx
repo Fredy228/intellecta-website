@@ -1,11 +1,11 @@
-import {ContactsSlider} from "../../components/UI/Slider/ContactSlider/ContactsSlider";
+import {Slider} from "components/UI/Slider/Slider/Slider";
 
 export default function ContactsPage() {
     return (
         <main>
             <section>
                 <div className={'__container'}>
-                    <ContactsSlider/>
+                    <Slider/>
                 </div>
             </section>
         </main>

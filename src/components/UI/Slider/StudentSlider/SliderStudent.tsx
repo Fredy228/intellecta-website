@@ -5,7 +5,7 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import style from "./student-pagination.module.scss";
 import styles from "./student-slider.module.scss";
-import {slideApp, TSlideProps} from "../list";
+import {slideStudents, TSlideProps} from "../list";
 
 export const SliderStudents: FC = () => {
     const paginationTexts: string[] = ["Головна","Розклад", "Завдання", "Чати","Оцінки","Профіль"];
@@ -25,7 +25,7 @@ export const SliderStudents: FC = () => {
                     spaceBetween={20}
                     className={styles.adSlider}
                 >
-                    {slideApp.map((slide: TSlideProps) => (
+                    {slideStudents.map((slide: TSlideProps) => (
                         <SwiperSlide key={slide.id}>
                             <div className={styles.adSlider_item}>
                                 <img className={styles.adSlider_image} src={slide.image} alt={slide.image}/>
