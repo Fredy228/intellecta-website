@@ -1,6 +1,6 @@
 import styles from "../Students/students.module.scss";
-import {IconRobotbook} from "../../components/Icon/Icons";
-import {SliderStudents} from "../../components/UI/Slider/StudentSlider/SliderStudent";
+import {IconRobotbook} from "components/Icon/Icons";
+import {SliderStudents} from "components/UI/Slider/StudentSlider/SliderStudent";
 
 export default function AdministationPage() {
     return(

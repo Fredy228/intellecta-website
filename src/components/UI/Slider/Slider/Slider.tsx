@@ -20,23 +20,22 @@ export const Slider: FC = () => {
                         el: `.${style["swiper-pagination"]}`,
                         clickable: true,
                         renderBullet: function (index: number, className: string) {
-                            return `<span class="${style[className]}">${paginationTexts[index]}</span>`;
+                            return `<span class="${className}">${paginationTexts[index]}</span>`;
                         },
                     }}
                     modules={[Pagination]}
                     spaceBetween={20}
                     className={styles.adSlider}
                 >
-                    {slideHome.map((slide: TSlideProps) => (
+                    {slideHome.map((slide:TSlideProps) => (
                         <SwiperSlide key={slide.id}>
-                            <div className={styles.adSlider_item}>
-                                <img className={styles.adSlider_image} src={slide.image} alt={slide.image}/>
-                                <div>{slide.image}</div>
-                            </div>
+                          <div className={styles.adSlider_item + (slide.reverse ? ` ${styles["--reversed"]}` : "")}>
+                            <div className={styles.adSlider_content}>{slide.textElement}</div>
+                            <img className={styles[`adSlider_image_${slide.id}`]} src={slide.image} alt={slide.image} />
+                          </div>
                         </SwiperSlide>
                     ))}
-                    <div className={`${style["swiper-pagination"]}`}/>
-
+                  <div className={`${style["swiper-pagination"]}`}/>
                 </Swiper>
             </div>
         </div>

@@ -15,7 +15,7 @@ export const SliderStudents: FC = () => {
                 <Swiper
                     slidesPerView={1}
                     pagination={{
-                        el: `.swiper-pagination`,
+                        el: `.${style['swiper-pagination']}`,
                         clickable: true,
                         renderBullet: function (index: number, className: string) {
                             return `<span class="${className}">${paginationTexts[index]}</span>`;
@@ -33,7 +33,9 @@ export const SliderStudents: FC = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-                    <div className={`swiper-pagination`}/>
+                  <div className={style['swiper-pagination-wrap']}>
+                    <div className={style['swiper-pagination']}/>
+                  </div>
                 </Swiper>
             </div>
         </div>
