@@ -1,4 +1,12 @@
-import {IconChat, IconStatistic, IconTests, IconZhurnal} from "../../Icon/Icons";
+import {
+    IconAggregator,
+    IconChat,
+    IconIncubator,
+    IconNuoy,
+    IconStatistic,
+    IconTests,
+    IconZhurnal
+} from "../../Icon/Icons";
 
 export type TCardProps = {
     id:number;
@@ -10,7 +18,13 @@ export type TCardProps = {
     bg:string;
     link:string;
 }
-
+export type TCardContactProps = {
+    id:number;
+    svg:JSX.Element;
+    title:string;
+    role:string;
+    bg:string;
+}
 export const cardContent: TCardProps[] = [
     {
         id:1,
@@ -53,4 +67,31 @@ export const cardContent: TCardProps[] = [
         bg:"#FCD1FFFF",
         link:'/contacts'
     },
+]
+
+export const cardContact: TCardContactProps[] = [
+    {
+        id:1,
+        svg: <IconAggregator />,
+        title: 'G*AGGREGATOR',
+        role: 'Детальніше',
+        bg:"#FFFF",
+
+
+    },
+    {
+        id:2,
+        svg: <IconNuoy/>,
+        title: 'НУ "ОЮА"',
+        role: 'Детальніше',
+        bg:"#FFFF",
+    },
+    {
+        id:3,
+        svg: <IconIncubator />,
+        title: 'G*INCUBATOR',
+        role: 'Детальніше',
+        bg:"#FFFF",
+    },
+
 ]

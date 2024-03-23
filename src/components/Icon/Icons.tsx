@@ -8,3 +8,6 @@ export { ReactComponent as IconRobotTeacher } from "components/Icon/storage/teac
 export { ReactComponent as IconInstagram } from "components/Icon/storage/instagram.svg"
 export { ReactComponent as IconRobotbook } from  "components/Icon/storage/Robot-book.svg"
 export { ReactComponent as IconTikTok } from "components/Icon/storage/tik-tok.svg"
+export { ReactComponent as IconIncubator } from "components/Icon/storage/G_incubator_white_black_r.svg"
+export { ReactComponent as IconNuoy } from "components/Icon/storage/nuoy-logo copy.svg"
+export { ReactComponent as IconAggregator } from "components/Icon/storage/G_Aggregator.svg"

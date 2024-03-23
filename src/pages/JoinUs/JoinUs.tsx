@@ -28,7 +28,7 @@ export default function JoinUsPage() {
                                 <label>Пароль:</label>
                                 <input type={'password'} placeholder={'введіть пароль'}/>
                                 <div className={styles.join__form_btns}>
-                                    <a target={'_blank'} href={"https://fredytest.kyiv.ua/auth/login"}
+                                    <a target={'_blank'} rel="noreferrer" href={"https://fredytest.kyiv.ua/auth/login"}
                                        className={styles.join__form_btns_join}>Приєднатися</a>
                                     <span>чи</span>
                                     <a href={"https://fredytest.kyiv.ua/auth/login"}
