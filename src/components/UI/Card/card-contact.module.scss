@@ -1,0 +1,42 @@
+@import "styles/var";
+.card {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  color: $primary-text-color;
+  max-width: 400px;
+  flex-direction: column;
+  display: flex;
+  padding: 70px 83px 71px 83px;
+  transition: all ease 0.9s;
+  align-items: center;
+  justify-content: space-between;
+
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  &__flag {
+    top: -28px;
+    left: 17px;
+    position: absolute;
+    width: 100%;
+    max-width: 215px;
+    border: 2px solid $default-color;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    z-index: -1;
+    font-weight: 400;
+  }
+  &__title{
+      color:#11142DFF;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  svg{
+    width: 100%;
+  }
+  }

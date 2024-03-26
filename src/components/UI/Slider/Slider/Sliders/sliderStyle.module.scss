@@ -1,0 +1,37 @@
+.for_students {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: #383838;
+
+  &_header {
+    font-size: clamp(1rem, 0.8rem + 0.7143vw, 2rem);
+    font-weight: bold;
+
+    &_name {
+      color: #67BCFF
+    }
+  }
+  &_description {
+    font-size: clamp(0.6rem, 0.6rem + 0.6vw, 1.5rem);
+  }
+}
+.for_teachers {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: #383838;
+  padding-right: 72px;
+
+  &_header {
+    font-size: clamp(1rem, 0.8rem + 0.7143vw, 2rem);
+    font-weight: bold;
+
+    &_name {
+      color: #67BCFF
+    }
+  }
+  &_description {
+    font-size: clamp(0.6rem, 0.6rem + 0.6vw, 1.5rem);
+  }
+}

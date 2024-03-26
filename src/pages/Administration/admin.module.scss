@@ -1,0 +1,38 @@
+@import "styles/var";
+.admin {
+  font-size: 25px;
+  &__top{
+    display: flex;
+    justify-content: center;
+    gap: 202px;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 26px;
+    color: #11142d;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 26px;
+    color: #11142d;
+  }
+  &__robot{
+    >svg{
+      margin-bottom: 29px;
+    }
+    span{
+      color: #11142d
+    }
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 136px;
+    &_item{
+      background: url("../../assets/img/markers.svg") 0 10px no-repeat;
+      background-size: 15px 15px;
+      padding-left: 21px;
+    }
+  }
+}

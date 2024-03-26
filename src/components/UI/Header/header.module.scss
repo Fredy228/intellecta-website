@@ -1,0 +1,43 @@
+@import "styles/var.scss";
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0 13px 0;
+    gap: 50px;
+  }
+
+  &__logo {
+    border-radius: 41px;
+    box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+  }
+
+  &__menu {
+    border-radius: 41px;
+    box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+    display: flex;
+    padding: 60px 48px;
+    gap: 80px;
+  }
+  &__menu_item {
+    @include li-header;
+    transition: 0.3s all linear;
+    &:hover{
+      color: $option-color;
+    }
+  }
+}
+.subheader{
+  width: 100%;
+  background-color: #FDFCFC;
+  &__title{
+    text-align: center;
+    width: 4400px;
+    color: #383838FF;
+    font-size: 50px;
+    height: 80px;
+  }
+}

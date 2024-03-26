@@ -1,0 +1,65 @@
+@import "components/UI/Cube/mixins-cube.module";
+
+.side {
+  @include side;
+}
+
+.plug {
+  @include plug;
+
+  &_wrapper {
+    @include plugin-wrapper
+  }
+
+  &_title {
+    @include title-cube;
+  }
+
+  .cube {
+    @include cube-styles;
+  }
+
+  .cube__wrapper_right {
+    right: 270px;
+    bottom: -8%;
+    position: absolute;
+    @media (max-width: 880px) {
+      transform: translateX(67%);
+    }
+  }
+
+  .cube_wrapper_second_left {
+    top: -15%;
+    left: 466px;
+    position: absolute;
+    @media (max-width: 880px) {
+      transform: translateX(-100%);
+    }
+
+    .cube_second {
+      @include second-cube-styles;
+    }
+  }
+
+  .cube_wrapper_second {
+    top: -15%;
+    right: 466px;
+    position: absolute;
+    @media (max-width: 880px) {
+      transform: translateX(100%);
+    }
+
+    .cube_second {
+      @include second-cube-styles;
+    }
+  }
+
+  .cube__wrapper {
+    left: 270px;
+    bottom: -8%;
+    position: absolute;
+    @media (max-width: 880px) {
+      transform: translateX(-20%);
+    }
+  }
+}

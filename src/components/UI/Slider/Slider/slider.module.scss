@@ -1,0 +1,61 @@
+@import "../../../../styles/var";
+
+.adSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 72px 96px;
+
+    &.--reversed {
+      flex-direction: row-reverse;
+    }
+
+    & > * {
+      flex: 1 1 50%;
+      width: 50%;
+    }
+  }
+  &_content {
+    z-index: 1;
+    height: 100%;
+  }
+  &_innerGrid {
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.25);
+    background: $default-color;
+    color: #11142D;
+    overflow: hidden;
+    height: auto;
+  }
+
+
+  &_carouselWrap:before {
+    content: "";
+    display: block;
+    padding-top: 56%;
+  }
+
+  &_image_1{
+    background-position: 50% 50%;
+    width: 60%;
+    transform: scale(150%) translate(-10%, 5%);
+  }
+  &_image_2{
+    background-position: 50% 50%;
+    width: 60%;
+    transform: scale(120%) translate(-2%, -5%);
+  }
+  &_image_3{
+    background-position: 50% 50%;
+    width: 60%;
+    transform: scale(150%) translate(10%, 5%);
+  }
+}

@@ -1,5 +1,3 @@
-export const Test = () => {
-    return (
-        <>Test page</>
-    );
+export const TestPage = () => {
+  return <>Test page</>;
 };
