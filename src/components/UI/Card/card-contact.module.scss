@@ -7,16 +7,31 @@
   max-width: 400px;
   flex-direction: column;
   display: flex;
-  padding: 70px 83px 71px 83px;
-  transition: all ease 0.9s;
+  padding: 70px 20px;
   align-items: center;
   justify-content: space-between;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255) 100%
+  );
+  transition: scale 0.7s ease;
+  cursor: pointer;
 
-  &__wrapper{
+  &:hover {
+    scale: 1.1;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 255),
+      rgb(115, 135, 238) 100%
+    );
+  }
+
+  &__wrapper {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 100px;
+    flex-wrap: nowrap;
+    gap: 50px;
+    padding-top: 30px;
   }
   &__flag {
     top: -28px;
@@ -31,12 +46,12 @@
     z-index: -1;
     font-weight: 400;
   }
-  &__title{
-      color:#11142DFF;
-      font-size: 24px;
-      font-weight: 400;
-    }
-  svg{
+  &__title {
+    color: #11142dff;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  svg {
     width: 100%;
   }
-  }
+}

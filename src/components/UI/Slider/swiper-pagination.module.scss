@@ -1,7 +1,7 @@
-@import "styles/var";
+@import "src/styles/var";
 
-.swiper-pagination {
-  --swiper-pagination-bottom: 0px;
+.swiper-pagination-1 {
+  //--swiper-pagination-bottom: 0px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-.swiper-bullet-custom {
+.swiper-bullet-custom-1 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
   transition-timing-function: ease;
 }
 
-.swiper-bullet-custom-active {
+.swiper-bullet-custom-active-1 {
   color: $default-color;
   background-color: #67bcff;
 }

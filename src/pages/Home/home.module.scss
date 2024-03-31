@@ -1,57 +1,69 @@
 @import "styles/var";
 .hero {
-  &__wrapper{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
+  @include section_default;
 
-  }
-  &__img{
+  &__wrapper {
+    max-width: 800px;
     width: 100%;
-    max-width: 1295px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+  }
+  &__img {
+    width: 100%;
     height: auto;
   }
   &__title {
-    width: 100%;
-    max-width: 638px;
     @include title-hero;
+    margin-bottom: 30px;
+    text-align: left;
   }
   &__subtitle {
-    width: 100%;
-    max-width: 655px;
     font-size: 25px;
     font-weight: 400;
+    margin-bottom: 30px;
+    text-align: left;
   }
   &__btn {
-    padding: 27px 33px;
     @include button-or-link;
+    padding: 25px 30px;
   }
 }
-.reg{
-  &__wrapper{
+
+.slider {
+  @include section_default;
+}
+
+.reg {
+  @include section_default;
+
+  &__wrapper {
     display: flex;
-    justify-content: space-around;
+    gap: 35px;
+
+    > svg {
+      flex: 0.7;
+      height: auto;
+    }
   }
-  &__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 39px;
-    width: 100%;
-    max-width: 803px;
-    margin-right: 10px;
-    &_title{
-      width: 100%;
-      max-width: 642px;
-      margin-bottom: 38px;
+
+  &__content {
+    flex: 1;
+
+    &_title {
+      margin-bottom: 30px;
     }
-    &_sub{
+
+    &_subtitle {
+      margin-bottom: 30px;
     }
-    &_link{
-      padding: 17px 51px;
+
+    &_link {
       @include button-or-link;
+      padding: 17px 51px;
     }
   }
+}
+
+.opportunities {
+  @include section_default;
 }

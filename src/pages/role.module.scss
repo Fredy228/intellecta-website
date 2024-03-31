@@ -1,0 +1,36 @@
+@import "src/styles/var";
+
+.role {
+  font-size: 25px;
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 26px;
+    color: #11142d;
+    font-weight: 500;
+  }
+  &__robot {
+    flex: 0.55;
+
+    > svg {
+      margin-bottom: 29px;
+    }
+    span {
+      color: #11142d;
+    }
+  }
+  &__menu {
+    margin: 80px 0;
+
+    &_item {
+      background: url("../assets/img/markers.svg") 0 10px no-repeat;
+      background-size: 15px 15px;
+      padding-left: 25px;
+      margin-bottom: 15px;
+    }
+  }
+}

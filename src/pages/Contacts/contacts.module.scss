@@ -1,0 +1,46 @@
+@import "styles/var";
+
+.contacts {
+  &__section {
+    @include section_default;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+.team {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 300;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    margin-right: 50px;
+  }
+
+  &__sublist {
+    display: flex;
+  }
+
+  &__subitem {
+    font-size: 20px;
+    padding: 7px 40px;
+    border-radius: 30px;
+    border: 2px solid #0095ff;
+
+    &:first-child {
+      background-color: #0095ff;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,7 +1,8 @@
 @import "styles/var";
-:root{
+:root {
   --swiper-pagination-bottom: -1px;
 }
+
 .swiper-pagination-wrap {
   position: absolute;
   display: flex;
@@ -10,31 +11,33 @@
   width: 100%;
   bottom: 0;
   z-index: 1;
+}
 
-  .swiper-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto 10px auto ;
-    padding: 0 16px;
-    border-radius: 70px;
-    background: #383838;
-    width: fit-content!important;
-    max-width: 669px;
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 10px auto;
+  padding: 0 16px;
+  border-radius: 70px;
+  background: #383838;
+  width: fit-content !important;
+  max-width: 669px;
+}
 
-    & :global(.swiper-pagination-bullet) {
-      position: relative ;
-      width: 100% !important;
-      height: 100% !important;
-      font-size: clamp(0.75rem, 0.6071rem + 0.7143vw, 1.25rem) !important;
-      opacity: 1;
-      background: transparent;
-      padding: 20px 17px !important;
-      color: #fff;
-    }
+.swiper-bullet-custom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: clamp(0.75rem, 0.6071rem + 0.7143vw, 1.25rem);
+  opacity: 1;
+  background: transparent;
+  padding: 20px 17px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s color ease;
+}
 
-    & :global(.swiper-pagination-bullet-active) {
-      color: #67bcff;
-    }
-  }
+.swiper-bullet-custom-active {
+  color: #67bcff;
 }

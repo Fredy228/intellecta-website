@@ -1,4 +1,5 @@
 @import "styles/var.scss";
+
 .header {
   &__wrapper {
     display: flex;
@@ -9,34 +10,51 @@
   }
 
   &__logo {
-    border-radius: 41px;
+    border-radius: 30px;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
     background: rgb(255, 255, 255);
+    display: block;
+    width: 120px;
+    height: 120px;
+
+    > svg {
+      width: 120px;
+      height: 120px;
+    }
   }
 
   &__menu {
-    border-radius: 41px;
+    border-radius: 30px;
+    height: 120px;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.25);
     background: rgb(255, 255, 255);
     display: flex;
-    padding: 60px 48px;
-    gap: 80px;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
   }
   &__menu_item {
     @include li-header;
-    transition: 0.3s all linear;
-    &:hover{
+    transition: 0.3s color linear;
+
+    > a {
+      display: inline-block;
+      padding: 20px;
+    }
+
+    &:hover {
       color: $option-color;
     }
   }
 }
-.subheader{
+
+.subheader {
   width: 100%;
-  background-color: #FDFCFC;
-  &__title{
+  background-color: #fdfcfc;
+  &__title {
     text-align: center;
     width: 4400px;
-    color: #383838FF;
+    color: #383838ff;
     font-size: 50px;
     height: 80px;
   }
