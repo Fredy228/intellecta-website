@@ -12,7 +12,7 @@ export const SliderAdmin: FC = () => {
     "Головна",
     "Розклад",
     "Списки",
-    "Чвти",
+    "Чати",
     "Статистика",
     "Новини",
   ];
@@ -46,10 +46,10 @@ export const SliderAdmin: FC = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div className={style["swiper-pagination-wrap"]}>
-            <div className={style["swiper-pagination"]} />
-          </div>
         </Swiper>
+        <div className={style["swiper-pagination-wrap"]}>
+          <div className={style["swiper-pagination"]} />
+        </div>
       </div>
     </div>
   );

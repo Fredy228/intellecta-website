@@ -5,6 +5,11 @@ import styles from "pages/Home/home.module.scss";
 import { IconRobotTeacher } from "components/Icon/Icons";
 import { Slider } from "components/UI/Slider/Slider/Slider";
 
+import profile_info from "assets/img/profile-info.webp";
+import profile_add from "assets/img/profile-add.webp";
+import profile_achive from "assets/img/profile-achive.webp";
+import profile_friends from "assets/img/profile-friends.webp";
+
 export default function HomePage() {
   return (
     <main>
@@ -19,12 +24,33 @@ export default function HomePage() {
               делегувати та керувати процесом навчання безпосередньо з вашими
               одногрупниками, викладачами та колегами.
             </p>
-            <Link to={"/join_us"} className={styles.hero__btn}>
+            <a
+              href={"https://intellecta.com.ua"}
+              target={"_blank"}
+              className={styles.hero__btn}
+            >
               Приєднатися
-            </Link>
+            </a>
           </div>
-          <div>
+          <div className={styles.hero__wrappLaptop}>
             <img src={heroImg} alt={"Laptop"} className={styles.hero__img} />
+
+            <img
+              className={styles.hero__profileInfo}
+              src={profile_info}
+              alt=""
+            />
+            <img className={styles.hero__profileAdd} src={profile_add} alt="" />
+            <img
+              className={styles.hero__profileAchive}
+              src={profile_achive}
+              alt=""
+            />
+            <img
+              className={styles.hero__profileFriends}
+              src={profile_friends}
+              alt=""
+            />
           </div>
         </div>
       </section>

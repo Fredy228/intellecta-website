@@ -13,25 +13,61 @@
   background: linear-gradient(
     180deg,
     rgb(255, 255, 255),
-    rgb(255, 255, 255) 100%
+    rgb(115, 135, 238) 100%
   );
   transition: scale 0.7s ease;
   cursor: pointer;
 
-  &:hover {
-    scale: 1.1;
+  @media screen and (max-width: 1023px) {
+    width: calc(50% - (50px / 2));
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
     background: linear-gradient(
       180deg,
       rgb(255, 255, 255),
-      rgb(115, 135, 238) 100%
+      rgb(255, 255, 255) 100%
     );
+  }
+
+  &:hover {
+    scale: 1.1;
+
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255) 100%
+    );
+
+    @media screen and (max-width: 1279px) {
+      scale: 1.05;
+    }
+
+    @media screen and (max-width: 767px) {
+      scale: 1;
+    }
   }
 
   &__wrapper {
     display: flex;
-    flex-wrap: nowrap;
     gap: 50px;
     padding-top: 30px;
+
+    @media screen and (max-width: 1279px) {
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   &__flag {
     top: -28px;

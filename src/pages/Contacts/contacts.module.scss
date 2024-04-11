@@ -10,6 +10,36 @@
     font-size: 35px;
     font-weight: 300;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    padding: 10px 15px;
+    background-color: $default-color;
+    color: $widget-color;
+    border-radius: 30px;
+    border: 2px solid $widget-color;
+    font-size: 20px;
+    max-width: 360px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
   }
 }
 
@@ -23,10 +53,18 @@
   &__item {
     margin-bottom: 15px;
     margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__sublist {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__subitem {
@@ -34,6 +72,14 @@
     padding: 7px 40px;
     border-radius: 30px;
     border: 2px solid #0095ff;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
     &:first-child {
       background-color: #0095ff;

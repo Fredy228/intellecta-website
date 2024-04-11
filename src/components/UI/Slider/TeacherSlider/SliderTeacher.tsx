@@ -46,10 +46,10 @@ export const SliderTeacher: FC = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div className={style["swiper-pagination-wrap"]}>
-            <div className={style["swiper-pagination"]} />
-          </div>
         </Swiper>
+        <div className={style["swiper-pagination-wrap"]}>
+          <div className={style["swiper-pagination"]} />
+        </div>
       </div>
     </div>
   );

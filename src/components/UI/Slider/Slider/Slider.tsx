@@ -9,11 +9,7 @@ import styles from "./slider.module.scss";
 import { slideHome, TSlideProps } from "../list";
 
 export const Slider: FC = () => {
-  const paginationTexts = [
-    "Для учнів",
-    "Для викладачів",
-    "Для адміністрації навчальних закладів",
-  ];
+  const paginationTexts = ["Для учнів", "Для викладачів", "Для адміністрації"];
   return (
     <div className={styles.adSlider_innerGrid}>
       <div className={styles.adSlider_carouselWrap}>

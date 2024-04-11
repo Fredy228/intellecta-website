@@ -5,22 +5,58 @@
   &__top {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column-reverse;
+      align-items: initial;
+    }
   }
   &__title {
     text-align: center;
     margin-bottom: 26px;
     color: #11142d;
     font-weight: 500;
+    font-size: 30px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 25px;
+    }
   }
   &__robot {
-    flex: 0.55;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     > svg {
       margin-bottom: 29px;
+      width: 50%;
+      height: auto;
     }
     span {
       color: #11142d;
+    }
+
+    @media screen and (max-width: 1279px) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      flex-direction: row;
+      gap: 20px;
+
+      > svg {
+        max-width: 150px;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 80px;
     }
   }
   &__menu {
@@ -31,6 +67,11 @@
       background-size: 15px 15px;
       padding-left: 25px;
       margin-bottom: 15px;
+      font-size: 20px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -41,7 +41,7 @@ $animation-delay: 0.5s;
   color: #383838;
 }
 @mixin li-footer {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   margin-bottom: 15px;
 }
@@ -51,6 +51,10 @@ $animation-delay: 0.5s;
   font-weight: 600;
   > span {
     color: $option-color;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 30px;
   }
 }
 
@@ -75,6 +79,10 @@ $animation-delay: 0.5s;
   &:hover {
     opacity: 0.7;
   }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 18px;
+  }
 }
 @mixin white_star {
   position: absolute;
@@ -95,4 +103,8 @@ $animation-delay: 0.5s;
 
 @mixin section_default {
   padding: 40px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 0;
+  }
 }

@@ -51,12 +51,21 @@ export default function ContactsPage() {
           <img src={teams_img} alt="Team" width={2174} height={710} />
         </div>
       </section>
-      <section className={styles.contacts__section}>
+      <section className={`${styles.contacts__section} __container`}>
         <h2 className={styles.contacts__title}>Контакти</h2>
-        <p>У вас залишилися питання?</p>
-        <a href={"mailto:support@intellecta.ua"}>support@intellecta.ua</a>
-        <p>Хочете спробувати платформу для дистанційного навчання?</p>
-        <a href={"tel:+380 97 907 1001"}>+380 97 907 1001</a>
+        <p className={styles.contacts__text}>У вас залишилися питання?</p>
+        <a
+          className={styles.contacts__link}
+          href={"mailto:support@intellecta.ua"}
+        >
+          support@intellecta.ua
+        </a>
+        <p className={styles.contacts__text}>
+          Хочете спробувати платформу для дистанційного навчання?
+        </p>
+        <a className={styles.contacts__link} href={"tel:+380 97 907 1001"}>
+          +380 97 907 1001
+        </a>
       </section>
     </main>
   );

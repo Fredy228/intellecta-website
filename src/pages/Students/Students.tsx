@@ -13,7 +13,7 @@ export default function StudentsPage() {
             <div className={styles.role__robot}>
               <IconRobotbook />
               <p>
-                Повна версія <span className={styles.beta}>| Бета-версія</span>
+                <span className={styles.beta}>Бета-версія</span>
               </p>
             </div>
             <SliderStudents />

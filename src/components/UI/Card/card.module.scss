@@ -2,8 +2,8 @@
 .card {
   border-radius: 30px;
   position: relative;
-  width: 100%;
-  max-width: 400px;
+  //width: 100%;
+  //max-width: 400px;
   color: $primary-text-color;
   display: flex;
   flex-direction: column;
@@ -19,19 +19,46 @@
   transition-timing-function: ease;
   transition-duration: 900ms;
 
-  &:hover {
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      background: linear-gradient(
+        180deg,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255) 100%
+      );
+      scale: 1.1;
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 40px;
     background: linear-gradient(
       180deg,
       rgb(255, 255, 255),
       rgb(255, 255, 255) 100%
     );
-    scale: 1.1;
   }
 
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+    @media screen and (max-width: 1279px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__flag {
     bottom: 100%;
@@ -46,10 +73,8 @@
   }
 
   &__svg {
-    width: 100%;
-    max-width: 168px;
-    height: 100%;
-    max-height: 168px;
+    width: 168px;
+    height: 168px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -71,6 +96,10 @@
     margin-bottom: 28px;
     opacity: 0.4;
     transition: opacity linear 0.2s;
+
+    @media screen and (max-width: 1023px) {
+      opacity: 1;
+    }
   }
   &__subtitle {
     margin-bottom: 30px;
@@ -79,12 +108,20 @@
     font-weight: 400;
     opacity: 0.4;
     transition: opacity linear 0.4s;
+
+    @media screen and (max-width: 1023px) {
+      opacity: 1;
+    }
   }
   &__link {
     @include button-or-link;
     opacity: 0;
     padding: 13px 42px;
     transition: opacity linear 0.6s;
+
+    @media screen and (max-width: 1023px) {
+      opacity: 1;
+    }
   }
 
   &:hover {

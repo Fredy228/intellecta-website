@@ -9,6 +9,13 @@
     &__list {
       > li {
         @include li-footer;
+        cursor: pointer;
+
+        &:hover {
+          > a {
+            text-decoration: underline;
+          }
+        }
       }
     }
 
@@ -16,6 +23,11 @@
       font-size: 25px;
       font-weight: 500;
       margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
     }
   }
 
@@ -31,5 +43,6 @@
     align-items: center;
     border-top: 1px solid $default-color;
     padding: 15px 0;
+    font-size: 12px;
   }
 }

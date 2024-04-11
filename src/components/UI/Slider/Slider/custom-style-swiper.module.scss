@@ -24,6 +24,10 @@
   transition-property: color, background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
+
+  @media screen and (max-width: 767px) {
+    writing-mode: vertical-rl;
+  }
 }
 
 .swiper-bullet-custom-active {

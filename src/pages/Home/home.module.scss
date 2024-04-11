@@ -8,24 +8,73 @@
     margin: 0 auto 50px auto;
     text-align: center;
   }
+  &__wrappLaptop {
+    position: relative;
+  }
   &__img {
     width: 100%;
     height: auto;
   }
+
+  &__profileInfo {
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    width: 20%;
+
+    animation: scaler-info 14s ease infinite;
+  }
+
+  &__profileAdd {
+    position: absolute;
+    width: 43.5%;
+    bottom: 12%;
+    right: 11.5%;
+    animation: scaler-add 14s ease infinite;
+  }
+
+  &__profileAchive {
+    position: absolute;
+    width: 43.5%;
+    top: 32%;
+    right: 11.5%;
+    animation: scaler-achive 14s ease infinite;
+  }
+
+  &__profileFriends {
+    position: absolute;
+    left: 28%;
+    width: 20%;
+    bottom: 12%;
+    animation: scaler-friends 14s ease infinite;
+  }
+
   &__title {
     @include title-hero;
     margin-bottom: 30px;
     text-align: left;
+
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 15px;
+    }
   }
   &__subtitle {
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 30px;
     text-align: left;
+
+    @media screen and (max-width: 1279px) {
+      font-size: 20px;
+    }
   }
   &__btn {
     @include button-or-link;
     padding: 25px 30px;
+
+    @media screen and (max-width: 1279px) {
+      padding: 20px 25px;
+    }
   }
 }
 
@@ -43,6 +92,15 @@
     > svg {
       flex: 0.7;
       height: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+
+      > svg {
+        flex: initial;
+        width: 100%;
+      }
     }
   }
 
@@ -66,4 +124,73 @@
 
 .opportunities {
   @include section_default;
+}
+
+@keyframes scaler-info {
+  0% {
+    scale: 1;
+  }
+  11% {
+    scale: 1.1;
+  }
+  21% {
+    scale: 1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes scaler-achive {
+  0% {
+    scale: 1;
+  }
+  24% {
+    scale: 1;
+  }
+  35% {
+    scale: 1.1;
+  }
+  45% {
+    scale: 1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes scaler-add {
+  0% {
+    scale: 1;
+  }
+  48% {
+    scale: 1;
+  }
+  59% {
+    scale: 1.1;
+  }
+  69% {
+    scale: 1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes scaler-friends {
+  0% {
+    scale: 1;
+  }
+  72% {
+    scale: 1;
+  }
+  83% {
+    scale: 1.1;
+  }
+  93% {
+    scale: 1;
+  }
+  100% {
+    scale: 1;
+  }
 }
