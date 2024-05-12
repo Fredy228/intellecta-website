@@ -56,15 +56,15 @@ export default function ContactsPage() {
         <p className={styles.contacts__text}>У вас залишилися питання?</p>
         <a
           className={styles.contacts__link}
-          href={"mailto:support@intellecta.ua"}
+          href={"mailto:aleksejk777a@gmail.com"}
         >
-          support@intellecta.ua
+          aleksejk777a@gmail.com
         </a>
         <p className={styles.contacts__text}>
           Хочете спробувати платформу для дистанційного навчання?
         </p>
-        <a className={styles.contacts__link} href={"tel:+380 97 907 1001"}>
-          +380 97 907 1001
+        <a className={styles.contacts__link} href={"tel:+380976831453"}>
+          +380 976 83 14 53
         </a>
       </section>
     </main>
